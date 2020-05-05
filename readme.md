@@ -5,7 +5,7 @@ Language exercises for masters
 ## Instructions
 
 1. `npm i` to install dependencies
-2. `npm build` to transpile Typescript
+2. `npm run build` to transpile Typescript
 3. `npm start` to see the results in the console
 
 ### 1. Array operations
