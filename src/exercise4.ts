@@ -13,10 +13,19 @@ interface Book {
 }
 
 const isBookRead = (books: Array<Book>, titleToSearch: string): boolean => {
-  const getBook = books.filter(
+  // ORIGINAL ANSWER
+
+  // const getBook = books.filter(
+  //   (book) => titleToSearch === book.title && book.isRead
+  // );
+  // return !getBook.length ? false : true;
+
+  // BETTER ANSWER
+  const myBook: any = books.find(
     (book) => titleToSearch === book.title && book.isRead
   );
-  return !getBook.length ? false : true;
+
+  return Boolean(myBook) && myBook.isRead;
 };
 // Answers ***************************
 

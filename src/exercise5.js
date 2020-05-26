@@ -12,7 +12,7 @@ class SlotMachine {
     const boolArray = [];
     const generateBool = () => {
       const random = Math.random();
-      return random >= 0.5 ? true : false;
+      return random >= 0.5;
     };
     for (let i = 0; i < this.numberOfBools; i++) {
       boolArray.push(generateBool());
